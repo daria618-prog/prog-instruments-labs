@@ -1,0 +1,19 @@
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["B", "E", "W", "F", "N", "I", "SIM", "ANN"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pyright]
+include = ["python"]
+exclude = [".venv", "__pycache__"]
+typeCheckingMode = "standard"
+reportMissingImports = "error"
+reportMissingTypeStubs = false
+pythonVersion = "3.10"
